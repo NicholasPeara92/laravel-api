@@ -59,15 +59,21 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
+                <a class="nav-link text-white {{ str_contains(Route::currentRouteName() == 'admin.projects') ? 'bg-secondary' : '' }}"
                   href="{{ route('admin.projects.index') }}">
                   <i class="fa-regular fa-note-sticky fa-lg fa-fw"></i> Progetti
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.types.index' ? 'bg-secondary' : '' }}"
+                <a class="nav-link text-white {{ str_contains(Route::currentRouteName() == 'admin.types') ? 'bg-secondary' : '' }}"
                   href="{{ route('admin.types.index') }}">
                   <i class="fa-solid fa-newspaper fa-lg fa-fw"></i> Types
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white {{ str_contains(Route::currentRouteName(), 'admin.technologies') ? 'bg-secondary' : '' }}"
+                  href="{{ route('admin.technologies.index') }}">
+                  <i class="fa-solid fa-bookmark fa-lg fa-fw"></i> Technologies
                 </a>
               </li>
             </ul>

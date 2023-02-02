@@ -59,13 +59,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white {{ str_contains(Route::currentRouteName() == 'admin.projects') ? 'bg-secondary' : '' }}"
+                <a class="nav-link text-white {{ str_contains(Route::currentRouteName(), 'admin.projects') ? 'bg-secondary' : '' }}"
                   href="{{ route('admin.projects.index') }}">
                   <i class="fa-regular fa-note-sticky fa-lg fa-fw"></i> Progetti
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white {{ str_contains(Route::currentRouteName() == 'admin.types') ? 'bg-secondary' : '' }}"
+                <a class="nav-link text-white {{ str_contains(Route::currentRouteName(), 'admin.types') ? 'bg-secondary' : '' }}"
                   href="{{ route('admin.types.index') }}">
                   <i class="fa-solid fa-newspaper fa-lg fa-fw"></i> Types
                 </a>

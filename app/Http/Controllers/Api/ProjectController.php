@@ -27,7 +27,6 @@ class ProjectController extends Controller
             ], 404);
         }
 
-        return $project;
 
     }
 }

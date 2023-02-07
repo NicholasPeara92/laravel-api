@@ -11,6 +11,6 @@ class FormContactController extends Controller
 {
     public function email(Request $request)
     {
-        Mail::to('info@boolpress.it')->send(new NewContact($request->all()));
+        Mail::to('info@boolfolio.it')->send(new NewContact($request->all()));
     }
 }
